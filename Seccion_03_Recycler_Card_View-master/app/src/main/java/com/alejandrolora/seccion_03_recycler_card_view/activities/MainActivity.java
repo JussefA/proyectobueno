@@ -78,10 +78,13 @@ public class MainActivity extends AppCompatActivity {
 
     private List<Movie> getAllMovies() {
         return new ArrayList<Movie>() {{
-            add(new Movie("Ben Hur", R.drawable.benhur));
-            add(new Movie("DeadPool", R.drawable.deadpool));
-            add(new Movie("Guardians of the Galaxy", R.drawable.guardians));
-            add(new Movie("Warcraft", R.drawable.warcraft));
+            add(new Movie("Multimetro", R.drawable.multimetro));
+            add(new Movie("Osciloscopio", R.drawable.osciloscopio));
+            add(new Movie("Generador de señales", R.drawable.generador));
+            add(new Movie("Puntas de generador", R.drawable.puntas));
+            add(new Movie("Fotometro",R.drawable.fotometro));
+            add(new Movie("Fuente de poder", R.drawable.fuente));
+            add(new Movie("Fuente de Voltaje",R.drawable.fuentevoltaje));
         }};
     }
 

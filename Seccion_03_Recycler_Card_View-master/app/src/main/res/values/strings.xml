@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Seccion_03_RecyclerView</string>
+    <string name="material">Material</string>
+    <string name="entrar">Entrar</string>
+    <string name="m1">M1</string>
+    <string name="disponible">Disponible</string>
 </resources>
