@@ -37,6 +37,10 @@ public class estudiante extends AppCompatActivity {
 
         listViewMat = (ListView) findViewById(R.id.listPedido);
 
+        nombresPedido.add("F1");
+        nombresPedido.add("F2");
+        nombresPedido.add("F3");
+        nombresPedido.add("F4");
 
         pedidoAdapter pedidoAdapter = new pedidoAdapter(this,R.layout.item_pedido,nombresPedido);
         listViewMat.setAdapter(pedidoAdapter);
