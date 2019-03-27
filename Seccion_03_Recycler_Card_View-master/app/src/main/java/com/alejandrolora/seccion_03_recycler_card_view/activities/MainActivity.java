@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(Movie movie, int position) {
                 //Toast.makeText(MainActivity.this, name + " - " + position, Toast.LENGTH_LONG).show();
-                removeMovie(position);
+                //removeMovie(position);
             }
         });
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.add_name:
-                this.addMovie(0);
+                //this.addMovie(0);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -88,17 +88,17 @@ public class MainActivity extends AppCompatActivity {
         }};
     }
 
-    private void addMovie(int position) {
-        movies.add(position, new Movie("New image " + (++counter), R.drawable.newmovie));
-        // Notificamos de un nuevo item insertado en nuestra colección
-        mAdapter.notifyItemInserted(position);
-        // Hacemos scroll hacia lo posición donde el nuevo elemento se aloja
-        mLayoutManager.scrollToPosition(position);
-    }
-
-    private void removeMovie(int position) {
-        movies.remove(position);
-        // Notificamos de un item borrado en nuestra colección
-        mAdapter.notifyItemRemoved(position);
-    }
+//    private void addMovie(int position) {
+//        movies.add(position, new Movie("New image " + (++counter), R.drawable.newmovie));
+//        // Notificamos de un nuevo item insertado en nuestra colección
+//        mAdapter.notifyItemInserted(position);
+//        // Hacemos scroll hacia lo posición donde el nuevo elemento se aloja
+//        mLayoutManager.scrollToPosition(position);
+//    }
+//
+//    private void removeMovie(int position) {
+//        movies.remove(position);
+//        // Notificamos de un item borrado en nuestra colección
+//        mAdapter.notifyItemRemoved(position);
+//    }
 }

@@ -18,6 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.cautin" />
+        <activity android:name=".activities.fotometro" />
+        <activity android:name=".activities.fuenteVoltaje" />
+        <activity android:name=".activities.fuentePoder" />
+        <activity android:name=".activities.generadorSenales" />
+        <activity android:name=".activities.multimetro" />
+        <activity android:name=".activities.osciloscopio" />
+        <activity android:name=".activities.puntas" />
     </application>
 
 </manifest>
