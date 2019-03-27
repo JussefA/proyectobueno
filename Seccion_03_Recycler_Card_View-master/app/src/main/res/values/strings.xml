@@ -7,4 +7,5 @@
     <string name="nombre">Nombre</string>
     <string name="carrera">Carrera</string>
     <string name="numero_de_control">Numero de Control</string>
+    <string name="pedido">Pedido</string>
 </resources>

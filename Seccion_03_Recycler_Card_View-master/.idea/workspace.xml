@@ -11,9 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7120ac62-5d14-4a1c-9bcb-f9df6c546dd8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/estudiante.xml" afterDir="false" />
+    <list default="true" id="5f52a490-a9b0-4b81-8873-fd58dbf8c8b9" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/pedidoAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/models/pedidoModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_pedido.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -22,19 +23,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/cautin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fotometro.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fotometro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fuentePoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fuentePoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fuenteVoltaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fuenteVoltaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/generadorSenales.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/generadorSenales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/estudiante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/multimetro.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/multimetro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/osciloscopio.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/osciloscopio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/puntas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/puntas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/MyAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/cautin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/materialCustomAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/materialCustomAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/estudiante.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/estudiante.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,22 +55,67 @@
       <file leaf-file-name="estudiante.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/estudiante.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="489">
+              <caret line="41" column="94" lean-forward="true" selection-start-line="41" selection-start-column="94" selection-end-line="41" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#601#822#0" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#616#624#0" expanded="true" />
+                <element signature="e#858#1083#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fotometro.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fotometro.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fotometro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="45" selection-end-column="11" />
+            <state relative-caret-position="285">
+              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+              <folding>
+                <element signature="e#1522#1530#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="multimetro.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/multimetro.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="78" column="78" selection-start-line="78" selection-start-column="78" selection-end-line="78" selection-end-column="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2053#2514#0" expanded="true" />
+                <element signature="e#2513#2514#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-340">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/MyAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="169" column="5" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="materialCustomAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/materialCustomAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2356,27 +2395,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/materialCustomAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/cautin.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fotometro.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fuente_poder.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fuente_voltaje.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/puntas.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/osciloscopio.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/multimetro.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/generador_senales.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/cautin.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/MyAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/models/pedidoModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_pedido.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/estudiante.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fotometro.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fuentePoder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fuenteVoltaje.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/generadorSenales.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/pedidoAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/materialCustomAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/multimetro.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/osciloscopio.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/puntas.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/estudiante.java" />
       </list>
     </option>
@@ -2393,6 +2417,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2421,6 +2448,20 @@
             <path>
               <item name="Seccion_03_Recycler_Card_View-master" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="seccion_03_recycler_card_view" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="adapters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Seccion_03_Recycler_Card_View-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="seccion_03_recycler_card_view" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Seccion_03_Recycler_Card_View-master" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -2429,42 +2470,17 @@
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
-            <path>
-              <item name="Seccion_03_Recycler_Card_View-master" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="menu" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="Seccion_03_Recycler_Card_View-master" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="9eeed30e" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../recyclercard/Seccion_03_Recycler_Card_View" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.alejandrolora.seccion_03_recycler_card_view.models" />
-      <recent name="com.alejandrolora.seccion_03_recycler_card_view.adapters" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lupit\Documents\Android\pro\proyectobueno\Seccion_03_Recycler_Card_View-master\app\src\main\res\layout" />
-      <recent name="C:\Users\lupit\Documents\Android\pro\proyectobueno\Seccion_03_Recycler_Card_View-master\app\src\main\java\com\alejandrolora\seccion_03_recycler_card_view\activities" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2583,20 +2599,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7120ac62-5d14-4a1c-9bcb-f9df6c546dd8" name="Default" comment="" />
-      <created>1553654525094</created>
+      <changelist id="5f52a490-a9b0-4b81-8873-fd58dbf8c8b9" name="Default" comment="" />
+      <created>1553661572178</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1553654525094</updated>
+      <updated>1553661572178</updated>
     </task>
-    <task id="LOCAL-00001" summary="pantallas terminadas">
-      <created>1553658016836</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1553658016838</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2604,33 +2612,32 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Android Profiler" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="bottom" id="Android Profiler" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Build Variants" order="1" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="right" id="Preview" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.32838285" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.32838285" />
-      <window_info anchor="bottom" id="Logcat" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Logcat" order="0" />
       <window_info id="Captures" order="7" weight="0.25" />
       <window_info id="Capture Tool" order="3" />
-      <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.13388805" />
-      <window_info anchor="bottom" id="Build" order="0" visible="true" weight="0.29867986" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="right" id="Gradle" order="3" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.17019667" />
+      <window_info anchor="bottom" id="Build" order="4" visible="true" weight="0.0016501651" />
+      <window_info anchor="right" id="Gradle" order="2" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
     </layout>
@@ -2638,12 +2645,8 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="pantallas terminadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="pantallas terminadas" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_mult.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
@@ -2653,32 +2656,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/models/materialDataModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/models/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state>
+          <caret selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/materialCustomAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cautin.xml">
-      <provider editor-type-id="android-designer2">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/estudiante.xml">
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84" />
+      <provider editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_pedido.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fotometro.xml">
@@ -2689,217 +2685,85 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fuente_poder.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fuente_voltaje.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/puntas.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/osciloscopio.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/multimetro.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/generador_senales.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/cautin.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/pedidoAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding>
-            <element signature="e#884#1064#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/MyAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="116" column="18" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+        <state relative-caret-position="680">
+          <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/models/pedidoModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/entrar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/estudiante.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/models/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding>
-            <element signature="e#1041#1057#0" expanded="true" />
-            <element signature="e#1489#1516#0" expanded="true" />
-            <element signature="e#1949#1966#0" expanded="true" />
-          </folding>
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/barra_menu.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-242" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/puntas.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/MyAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding>
-            <element signature="e#1177#1399#0" expanded="true" />
-            <element signature="e#1398#1399#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="169" column="5" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/osciloscopio.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/adapters/materialCustomAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+        <state relative-caret-position="438">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
-            <element signature="e#1195#1417#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/multimetro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-          <folding>
-            <element signature="e#1189#1411#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/generadorSenales.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
-          <folding>
-            <element signature="e#1208#1430#0" expanded="true" />
-            <element signature="e#1429#1430#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fuenteVoltaje.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
-          <folding>
-            <element signature="e#1199#1421#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fuentePoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
-          <folding>
-            <element signature="e#1193#1415#0" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
-          <folding>
-            <element signature="e#1316#1538#0" expanded="true" />
-            <element signature="e#1537#1538#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        <state relative-caret-position="-340">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/estudiante.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="489">
+          <caret line="41" column="94" lean-forward="true" selection-start-line="41" selection-start-column="94" selection-end-line="41" selection-end-column="94" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#601#822#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#616#624#0" expanded="true" />
+            <element signature="e#858#1083#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/fotometro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="45" selection-end-column="11" />
+        <state relative-caret-position="285">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+          <folding>
+            <element signature="e#1522#1530#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/alejandrolora/seccion_03_recycler_card_view/activities/multimetro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="78" column="78" selection-start-line="78" selection-start-column="78" selection-end-line="78" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2053#2514#0" expanded="true" />
+            <element signature="e#2513#2514#0" expanded="true" />
           </folding>
         </state>
       </provider>

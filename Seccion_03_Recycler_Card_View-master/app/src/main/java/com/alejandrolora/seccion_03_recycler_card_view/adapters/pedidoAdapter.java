@@ -8,18 +8,17 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.alejandrolora.seccion_03_recycler_card_view.R;
-import com.alejandrolora.seccion_03_recycler_card_view.models.Movie;
 
 import java.util.List;
 
-public class materialCustomAdapter extends BaseAdapter {
+public class pedidoAdapter extends BaseAdapter {
 
     private Context mContext;
     private int layout;
     private List<String> materialList;
 
 
-    public materialCustomAdapter(Context mContext, int layout, List<String> materialList) {
+    public pedidoAdapter(Context mContext, int layout, List<String> materialList) {
         this.mContext = mContext;
         this.layout = layout;
         this.materialList = materialList;
@@ -45,16 +44,15 @@ public class materialCustomAdapter extends BaseAdapter {
         View v = convertView;
 
         LayoutInflater layoutInflater = LayoutInflater.from(this.mContext);
-        v = layoutInflater.inflate(R.layout.item_mult, null);
+        v = layoutInflater.inflate(R.layout.item_pedido, null);
 
         String currentName = materialList.get(position);
 
-        TextView textView = (TextView) v.findViewById(R.id.txtmultimetro);
+        TextView textView = (TextView) v.findViewById(R.id.txtPedido);
         textView.setText(currentName);
+
 
         return v;
 
-
     }
-
 }

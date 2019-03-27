@@ -4,11 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.alejandrolora.seccion_03_recycler_card_view.R;
+import com.alejandrolora.seccion_03_recycler_card_view.adapters.MyAdapter;
 import com.alejandrolora.seccion_03_recycler_card_view.adapters.materialCustomAdapter;
 
 import java.util.ArrayList;
@@ -17,6 +20,9 @@ import java.util.List;
 public class multimetro extends AppCompatActivity {
     ImageView perfil;
     Button material;
+    String pedido;
+
+    public estudiante estudiante = new estudiante();
 
     private ListView listViewMat;
 
@@ -25,6 +31,7 @@ public class multimetro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.multimetro);
+
 
         material = findViewById(R.id.materialbtn);
 
@@ -47,7 +54,7 @@ public class multimetro extends AppCompatActivity {
 
 
         listViewMat = (ListView) findViewById(R.id.listMult);
-        List<String> names = new ArrayList<String>();
+        final List<String> names = new ArrayList<String>();
 
         names.add("M1");
         names.add("M2");
@@ -56,5 +63,35 @@ public class multimetro extends AppCompatActivity {
 
         materialCustomAdapter materialCustomAdapter = new materialCustomAdapter(this, R.layout.item_mult, names);
         listViewMat.setAdapter(materialCustomAdapter);
+
+        listViewMat.setClickable(true);
+
+        listViewMat.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                switch (position){
+                    case 0:
+                        pedido = names.get(0);
+                        Toast.makeText(multimetro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        estudiante.nombresPedido.add(pedido);
+                        break;
+
+                    case 1:
+                        pedido = names.get(1);
+                        Toast.makeText(multimetro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        break;
+                    case 2:
+                        pedido = names.get(2);
+                        Toast.makeText(multimetro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        break;
+                    case 3:
+                        pedido = names.get(3);
+                        Toast.makeText(multimetro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        break;
+                }
+
+            }
+        });
     }
 }

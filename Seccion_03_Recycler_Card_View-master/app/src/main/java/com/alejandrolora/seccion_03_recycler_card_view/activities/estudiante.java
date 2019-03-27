@@ -5,12 +5,21 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 
 import com.alejandrolora.seccion_03_recycler_card_view.R;
+import com.alejandrolora.seccion_03_recycler_card_view.adapters.pedidoAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class estudiante extends AppCompatActivity {
 
     Button material;
+    private ListView listViewMat;
+    List<String> nombresPedido = new ArrayList<String>();
+
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +35,11 @@ public class estudiante extends AppCompatActivity {
             }
         });
 
+        listViewMat = (ListView) findViewById(R.id.listPedido);
+
+
+        pedidoAdapter pedidoAdapter = new pedidoAdapter(this,R.layout.item_pedido,nombresPedido);
+        listViewMat.setAdapter(pedidoAdapter);
 
     }
 }
