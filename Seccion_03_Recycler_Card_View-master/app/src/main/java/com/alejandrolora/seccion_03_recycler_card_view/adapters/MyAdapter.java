@@ -9,10 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.alejandrolora.seccion_03_recycler_card_view.R;
-import com.alejandrolora.seccion_03_recycler_card_view.activities.cautin;
 import com.alejandrolora.seccion_03_recycler_card_view.activities.fotometro;
 import com.alejandrolora.seccion_03_recycler_card_view.activities.fuentePoder;
 import com.alejandrolora.seccion_03_recycler_card_view.activities.fuenteVoltaje;
@@ -117,15 +115,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 });
                 break;
             case 6:
-                holder.parentLayout.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent i = new Intent(context,cautin.class);
-                        context.startActivity(i);
-                    }
-                });
-                break;
-            case 7:
                 holder.parentLayout.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

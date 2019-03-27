@@ -4,4 +4,7 @@
     <string name="entrar">Entrar</string>
     <string name="m1">M1</string>
     <string name="disponible">Disponible</string>
+    <string name="nombre">Nombre</string>
+    <string name="carrera">Carrera</string>
+    <string name="numero_de_control">Numero de Control</string>
 </resources>

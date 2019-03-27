@@ -1,7 +1,10 @@
 package com.alejandrolora.seccion_03_recycler_card_view.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -13,6 +16,7 @@ import java.util.List;
 
 public class generadorSenales extends AppCompatActivity {
     ImageView perfil;
+    Button material;
 
     private ListView listViewMat;
 
@@ -22,6 +26,24 @@ public class generadorSenales extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.generador_senales);
 
+        material = findViewById(R.id.materialbtn);
+
+        material.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(generadorSenales.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+        perfil = findViewById(R.id.imgvw_perfil);
+        perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(generadorSenales.this,estudiante.class);
+                startActivity(i);
+            }
+        });
 
         listViewMat = (ListView) findViewById(R.id.listGen);
         List<String> names = new ArrayList<String>();

@@ -1,5 +1,6 @@
 package com.alejandrolora.seccion_03_recycler_card_view.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -7,6 +8,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.alejandrolora.seccion_03_recycler_card_view.adapters.MyAdapter;
 import com.alejandrolora.seccion_03_recycler_card_view.R;
@@ -16,6 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    ImageView perfil;
 
     private List<Movie> movies;
 
@@ -29,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        perfil = findViewById(R.id.imgvw_perfil);
+        perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,estudiante.class);
+                startActivity(i);
+            }
+        });
 
         movies = this.getAllMovies();
 
