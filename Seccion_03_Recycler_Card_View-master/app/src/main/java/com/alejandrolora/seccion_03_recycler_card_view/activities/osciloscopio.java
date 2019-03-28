@@ -21,6 +21,9 @@ public class osciloscopio extends AppCompatActivity {
     Button material;
     String pedido;
 
+    static ArrayList  <String> pedidoOsciloscopio = new ArrayList<String>();
+
+
     private ListView listViewMat;
 
 
@@ -70,23 +73,35 @@ public class osciloscopio extends AppCompatActivity {
                     case 0:
                         pedido = names.get(0);
                         Toast.makeText(osciloscopio.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoOsciloscopio.add(pedido);
                         break;
 
                     case 1:
                         pedido = names.get(1);
                         Toast.makeText(osciloscopio.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoOsciloscopio.add(pedido);
+
                         break;
                     case 2:
                         pedido = names.get(2);
                         Toast.makeText(osciloscopio.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoOsciloscopio.add(pedido);
+
                         break;
                     case 3:
                         pedido = names.get(3);
                         Toast.makeText(osciloscopio.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoOsciloscopio.add(pedido);
+
                         break;
                 }
 
             }
         });
+    }
+
+    public ArrayList<String> getOsciloscopios (){
+        return pedidoOsciloscopio;
+
     }
 }

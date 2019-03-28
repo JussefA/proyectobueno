@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.alejandrolora.seccion_03_recycler_card_view.R;
 import com.alejandrolora.seccion_03_recycler_card_view.adapters.pedidoAdapter;
@@ -17,8 +18,11 @@ public class estudiante extends AppCompatActivity {
 
     Button material;
     private ListView listViewMat;
+    List<String> nombresPedido2 = new ArrayList<String>();
     List<String> nombresPedido = new ArrayList<String>();
+    Integer tam;
 
+    public multimetro multi = new multimetro();
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,15 +39,22 @@ public class estudiante extends AppCompatActivity {
             }
         });
 
-        listViewMat = (ListView) findViewById(R.id.listPedido);
+        listViewMat = (ListView) findViewById(R.id.listPedidoFin);
 
-        nombresPedido.add("F1");
-        nombresPedido.add("F2");
-        nombresPedido.add("F3");
-        nombresPedido.add("F4");
+
+
+
+
 
         pedidoAdapter pedidoAdapter = new pedidoAdapter(this,R.layout.item_pedido,nombresPedido);
         listViewMat.setAdapter(pedidoAdapter);
 
     }
+
+//    public void agregarPedido(String pedido){
+//        nombresPedido2.add(pedido);
+//        //Toast.makeText(estudiante.this,"Pedido agregado" + pedido,Toast.LENGTH_LONG).show();
+//    }
+
+
 }

@@ -56,7 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtControl" />
 
     <ListView
-        android:id="@+id/listPedido"
+        android:id="@+id/listPedidoFin"
         android:layout_width="368dp"
         android:layout_height="298dp"
         android:layout_marginStart="2dp"

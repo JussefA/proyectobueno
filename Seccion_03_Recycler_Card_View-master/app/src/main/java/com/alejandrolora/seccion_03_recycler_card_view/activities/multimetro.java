@@ -21,8 +21,7 @@ public class multimetro extends AppCompatActivity {
     ImageView perfil;
     Button material;
     String pedido;
-
-    public estudiante estudiante = new estudiante();
+    static ArrayList  <String> pedidoMultimetro = new ArrayList<String>();
 
     private ListView listViewMat;
 
@@ -74,24 +73,34 @@ public class multimetro extends AppCompatActivity {
                     case 0:
                         pedido = names.get(0);
                         Toast.makeText(multimetro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
-                        estudiante.nombresPedido.add(pedido);
+                        pedidoMultimetro.add(pedido);
                         break;
 
                     case 1:
                         pedido = names.get(1);
                         Toast.makeText(multimetro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoMultimetro.add(pedido);
                         break;
                     case 2:
                         pedido = names.get(2);
                         Toast.makeText(multimetro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoMultimetro.add(pedido);
+
                         break;
                     case 3:
                         pedido = names.get(3);
                         Toast.makeText(multimetro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoMultimetro.add(pedido);
                         break;
                 }
 
             }
         });
+    }
+
+
+    public ArrayList<String> getMultimetros (){
+        return pedidoMultimetro;
+
     }
 }
