@@ -21,6 +21,8 @@ public class fuenteVoltaje extends AppCompatActivity {
     Button material;
     String pedido;
 
+    static ArrayList<String> pedidoFuenteVoltaje = new ArrayList<String>();
+
     private ListView listViewMat;
 
 
@@ -68,24 +70,32 @@ public class fuenteVoltaje extends AppCompatActivity {
                 switch (position){
                     case 0:
                         pedido = names.get(0);
-                        Toast.makeText(fuenteVoltaje.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(fuenteVoltaje.this,"Seleccionaste el  " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoFuenteVoltaje.add(pedido);
                         break;
 
                     case 1:
                         pedido = names.get(1);
-                        Toast.makeText(fuenteVoltaje.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(fuenteVoltaje.this,"Seleccionaste el  " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoFuenteVoltaje.add(pedido);
                         break;
                     case 2:
                         pedido = names.get(2);
-                        Toast.makeText(fuenteVoltaje.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(fuenteVoltaje.this,"Seleccionaste el  " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoFuenteVoltaje.add(pedido);
                         break;
                     case 3:
                         pedido = names.get(3);
-                        Toast.makeText(fuenteVoltaje.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(fuenteVoltaje.this,"Seleccionaste el  " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoFuenteVoltaje.add(pedido);
                         break;
                 }
 
             }
         });
+    }
+
+    public ArrayList<String> getFuenteVoltaje (){
+        return pedidoFuenteVoltaje;
     }
 }

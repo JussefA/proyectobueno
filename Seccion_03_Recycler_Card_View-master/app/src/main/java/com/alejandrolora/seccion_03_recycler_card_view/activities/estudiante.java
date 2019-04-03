@@ -18,11 +18,9 @@ public class estudiante extends AppCompatActivity {
 
     Button material;
     private ListView listViewMat;
-    List<String> nombresPedido2 = new ArrayList<String>();
     List<String> nombresPedido = new ArrayList<String>();
-    Integer tam;
 
-    public multimetro multi = new multimetro();
+    public pedido pedido = new pedido();
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,18 +41,22 @@ public class estudiante extends AppCompatActivity {
 
 
 
+    }
 
 
+
+    protected void onResume () {
+        super.onResume();
+
+        nombresPedido.clear();
+
+        nombresPedido.addAll(pedido.getPedidoTotal());
 
         pedidoAdapter pedidoAdapter = new pedidoAdapter(this,R.layout.item_pedido,nombresPedido);
         listViewMat.setAdapter(pedidoAdapter);
 
     }
 
-//    public void agregarPedido(String pedido){
-//        nombresPedido2.add(pedido);
-//        //Toast.makeText(estudiante.this,"Pedido agregado" + pedido,Toast.LENGTH_LONG).show();
-//    }
 
 
 }

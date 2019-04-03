@@ -4,19 +4,26 @@ public class materialDataModel {
 
 
     private String titulo;
-    private int imagen;
+    private String etiqueta;
 
-    public materialDataModel(String titulo, int imagen) {
+    public materialDataModel(String titulo, String etiqueta) {
         this.titulo = titulo;
-        this.imagen = imagen;
+        this.etiqueta = etiqueta;
     }
 
-    public String getTitulo() { return titulo; }
+    public String getTitulo() {
+        return titulo;
+    }
 
-    public void setTitulo(String titulo) { this.titulo = titulo; }
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
 
-    public int getImagen() { return imagen; }
+    public String getEtiqueta() {
+        return etiqueta;
+    }
 
-    public void setImagen(int imagen) { this.imagen = imagen; }
-
+    public void setEtiqueta(String etiqueta) {
+        this.etiqueta = etiqueta;
+    }
 }

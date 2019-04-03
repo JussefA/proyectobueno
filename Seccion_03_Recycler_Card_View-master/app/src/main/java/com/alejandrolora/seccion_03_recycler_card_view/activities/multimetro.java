@@ -72,24 +72,24 @@ public class multimetro extends AppCompatActivity {
                 switch (position){
                     case 0:
                         pedido = names.get(0);
-                        Toast.makeText(multimetro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(multimetro.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
                         pedidoMultimetro.add(pedido);
                         break;
 
                     case 1:
                         pedido = names.get(1);
-                        Toast.makeText(multimetro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(multimetro.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
                         pedidoMultimetro.add(pedido);
                         break;
                     case 2:
                         pedido = names.get(2);
-                        Toast.makeText(multimetro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(multimetro.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
                         pedidoMultimetro.add(pedido);
 
                         break;
                     case 3:
                         pedido = names.get(3);
-                        Toast.makeText(multimetro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(multimetro.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
                         pedidoMultimetro.add(pedido);
                         break;
                 }

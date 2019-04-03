@@ -20,6 +20,8 @@ public class fuentePoder extends AppCompatActivity {
     ImageView perfil;
     Button material;
     String pedido;
+    static ArrayList  <String> pedidoFuentePoder = new ArrayList<String>();
+
 
     private ListView listViewMat;
 
@@ -69,24 +71,32 @@ public class fuentePoder extends AppCompatActivity {
                 switch (position){
                     case 0:
                         pedido = names.get(0);
-                        Toast.makeText(fuentePoder.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(fuentePoder.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoFuentePoder.add(pedido);
                         break;
 
                     case 1:
                         pedido = names.get(1);
-                        Toast.makeText(fuentePoder.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(fuentePoder.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoFuentePoder.add(pedido);
                         break;
                     case 2:
                         pedido = names.get(2);
-                        Toast.makeText(fuentePoder.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(fuentePoder.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoFuentePoder.add(pedido);
                         break;
                     case 3:
                         pedido = names.get(3);
-                        Toast.makeText(fuentePoder.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(fuentePoder.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoFuentePoder.add(pedido);
                         break;
                 }
 
             }
         });
+    }
+
+    public ArrayList<String> getFuentePoder (){
+        return pedidoFuentePoder;
     }
 }

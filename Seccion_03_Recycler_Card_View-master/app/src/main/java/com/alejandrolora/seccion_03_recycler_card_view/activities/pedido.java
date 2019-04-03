@@ -25,7 +25,13 @@ public class pedido extends AppCompatActivity {
     private ListView listViewMat;
     public multimetro multi = new multimetro();
     public osciloscopio osciloscopio = new osciloscopio();
-
+    public fotometro fotom = new fotometro();
+    public fuentePoder fPoder = new fuentePoder();
+    public fuenteVoltaje fVolt = new fuenteVoltaje();
+    public generadorSenales generador = new generadorSenales();
+    public puntas puntas = new puntas();
+    public static ArrayList<String> pedidoTotal = new ArrayList<String>();
+    public static ArrayList<String> pedidoEstudiante = new ArrayList<String>();
 
 
 
@@ -33,6 +39,7 @@ public class pedido extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pedido);
+
 
         material = findViewById(R.id.materialbtn);
 
@@ -60,21 +67,35 @@ public class pedido extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(pedido.this, estudiante.class);
                 startActivity(i);
+
+
+                pedidoEstudiante.clear();
+                pedidoEstudiante.addAll(pedidoTotal);
+
             }
         });
 
         listViewMat = (ListView) findViewById(R.id.listPedido);
 
 
+        pedidoTotal.clear();
+
+        pedidoTotal.addAll(multi.getMultimetros());
+        pedidoTotal.addAll(osciloscopio.getOsciloscopios());
+        pedidoTotal.addAll(fotom.getFotometros());
+        pedidoTotal.addAll(fPoder.getFuentePoder());
+        pedidoTotal.addAll(fVolt.getFuenteVoltaje());
+        pedidoTotal.addAll(generador.getGeneradorSenales());
+        pedidoTotal.addAll(puntas.getPuntas());
 
 
 
-
-        pedidoAdapter pedidoAdapter = new pedidoAdapter(this,R.layout.item_pedido,multi.getMultimetros());
+        pedidoAdapter pedidoAdapter = new pedidoAdapter(this,R.layout.item_pedido,pedidoTotal);
         listViewMat.setAdapter(pedidoAdapter);
-        pedidoAdapter = new  pedidoAdapter(this,R.layout.item_pedido,osciloscopio.getOsciloscopios());
-        listViewMat.setAdapter(pedidoAdapter);
 
+    }
 
+    public ArrayList<String> getPedidoTotal (){
+        return pedidoEstudiante;
     }
 }

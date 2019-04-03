@@ -20,6 +20,7 @@ public class generadorSenales extends AppCompatActivity {
     ImageView perfil;
     Button material;
     String pedido;
+    static ArrayList  <String> pedidoGeneradorSenales = new ArrayList<String>();
 
     private ListView listViewMat;
 
@@ -68,24 +69,33 @@ public class generadorSenales extends AppCompatActivity {
                 switch (position){
                     case 0:
                         pedido = names.get(0);
-                        Toast.makeText(generadorSenales.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(generadorSenales.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoGeneradorSenales.add(pedido);
                         break;
 
                     case 1:
                         pedido = names.get(1);
-                        Toast.makeText(generadorSenales.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(generadorSenales.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoGeneradorSenales.add(pedido);
                         break;
                     case 2:
                         pedido = names.get(2);
-                        Toast.makeText(generadorSenales.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(generadorSenales.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoGeneradorSenales.add(pedido);
                         break;
                     case 3:
                         pedido = names.get(3);
-                        Toast.makeText(generadorSenales.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(generadorSenales.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoGeneradorSenales.add(pedido);
                         break;
                 }
 
             }
         });
+    }
+
+    public ArrayList<String> getGeneradorSenales (){
+        return pedidoGeneradorSenales;
+
     }
 }

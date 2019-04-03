@@ -20,6 +20,7 @@ public class fotometro extends AppCompatActivity {
     ImageView perfil;
     Button material;
     String pedido;
+    static ArrayList  <String> pedidoFotometro = new ArrayList<String>();
 
     private ListView listViewMat;
 
@@ -69,24 +70,33 @@ public class fotometro extends AppCompatActivity {
                 switch (position){
                     case 0:
                         pedido = names.get(0);
-                        Toast.makeText(fotometro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(fotometro.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoFotometro.add(pedido);
                         break;
 
                     case 1:
                         pedido = names.get(1);
-                        Toast.makeText(fotometro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(fotometro.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoFotometro.add(pedido);
                         break;
                     case 2:
                         pedido = names.get(2);
-                        Toast.makeText(fotometro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(fotometro.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoFotometro.add(pedido);
                         break;
                     case 3:
                         pedido = names.get(3);
-                        Toast.makeText(fotometro.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(fotometro.this,"Seleccionaste el  " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoFotometro.add(pedido);
                         break;
                 }
 
             }
         });
+    }
+
+    public ArrayList<String> getFotometros (){
+        return pedidoFotometro;
+
     }
 }

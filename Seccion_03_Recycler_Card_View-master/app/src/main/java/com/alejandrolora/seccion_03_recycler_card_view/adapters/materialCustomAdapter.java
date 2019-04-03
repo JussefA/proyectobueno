@@ -8,7 +8,6 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.alejandrolora.seccion_03_recycler_card_view.R;
-import com.alejandrolora.seccion_03_recycler_card_view.models.Movie;
 
 import java.util.List;
 

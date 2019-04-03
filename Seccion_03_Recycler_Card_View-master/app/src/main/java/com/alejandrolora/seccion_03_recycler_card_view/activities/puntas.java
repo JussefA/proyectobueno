@@ -20,6 +20,8 @@ public class puntas extends AppCompatActivity {
     ImageView perfil;
     Button material;
     String pedido;
+    static ArrayList  <String> pedidoPuntas = new ArrayList<String>();
+
 
     private ListView listViewMat;
 
@@ -69,24 +71,32 @@ public class puntas extends AppCompatActivity {
                 switch (position){
                     case 0:
                         pedido = names.get(0);
-                        Toast.makeText(puntas.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(puntas.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoPuntas.add(pedido);
                         break;
 
                     case 1:
                         pedido = names.get(1);
-                        Toast.makeText(puntas.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(puntas.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoPuntas.add(pedido);
                         break;
                     case 2:
                         pedido = names.get(2);
-                        Toast.makeText(puntas.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(puntas.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoPuntas.add(pedido);
                         break;
                     case 3:
                         pedido = names.get(3);
-                        Toast.makeText(puntas.this,"este es el material " + pedido, Toast.LENGTH_LONG).show();
+                        Toast.makeText(puntas.this,"Seleccionaste el " + pedido, Toast.LENGTH_LONG).show();
+                        pedidoPuntas.add(pedido);
                         break;
                 }
 
             }
         });
+    }
+    public ArrayList<String> getPuntas (){
+        return pedidoPuntas;
+
     }
 }
