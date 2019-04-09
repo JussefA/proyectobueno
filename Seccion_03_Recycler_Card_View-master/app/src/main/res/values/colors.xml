@@ -6,5 +6,7 @@
     <color name="VerdeLimon">#08f414</color>
     <color name="VerdeFuerte">#0db413</color>
     <color name="Negro">#000000</color>
-    <color name="Blanco">#ffffff</color>
+    <color name="Blanco">#FFFFFF</color>
+    <color name="Rosa">#E4027A</color>
+
 </resources>
