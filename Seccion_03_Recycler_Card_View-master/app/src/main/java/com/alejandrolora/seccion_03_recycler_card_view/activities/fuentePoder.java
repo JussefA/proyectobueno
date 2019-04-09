@@ -59,8 +59,8 @@ public class fuentePoder extends AppCompatActivity {
         names.add("FP3");
         names.add("FP4");
 
-        materialCustomAdapter materialCustomAdapter = new materialCustomAdapter(this, R.layout.item_mult, names);
-        listViewMat.setAdapter(materialCustomAdapter);
+//        materialCustomAdapter materialCustomAdapter = new materialCustomAdapter(this, R.layout.item_mult, names);
+//        listViewMat.setAdapter(materialCustomAdapter);
 
         listViewMat.setClickable(true);
 

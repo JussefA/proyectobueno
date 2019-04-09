@@ -51,14 +51,22 @@ public class fotometro extends AppCompatActivity {
 
 
         listViewMat = (ListView) findViewById(R.id.listFotometro);
-        final List<String> names = new ArrayList<String>();
+        final ArrayList<String> names = new ArrayList<String>();
+        final ArrayList<String> etiqueta = new ArrayList<String>();
+
 
         names.add("F1");
         names.add("F2");
         names.add("F3");
         names.add("F4");
 
-        materialCustomAdapter materialCustomAdapter = new materialCustomAdapter(this, R.layout.item_mult, names);
+        etiqueta.add("Disponible");
+        etiqueta.add("No disponble");
+        etiqueta.add("Disponible");
+        etiqueta.add("No Disponible");
+
+
+        materialCustomAdapter materialCustomAdapter = new materialCustomAdapter(this, R.layout.item_mult, names, etiqueta);
         listViewMat.setAdapter(materialCustomAdapter);
 
         listViewMat.setClickable(true);

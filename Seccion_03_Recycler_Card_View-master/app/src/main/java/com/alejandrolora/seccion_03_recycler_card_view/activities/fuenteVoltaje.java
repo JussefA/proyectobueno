@@ -51,14 +51,21 @@ public class fuenteVoltaje extends AppCompatActivity {
         });
 
         listViewMat = (ListView) findViewById(R.id.listFuenteVoltaje);
-        final List<String> names = new ArrayList<String>();
+
+        final ArrayList<String> names = new ArrayList<String>();
+        final ArrayList<String> etiqueta = new ArrayList<String>();
 
         names.add("FV1");
         names.add("FV2");
         names.add("FV3");
         names.add("FV4");
 
-        materialCustomAdapter materialCustomAdapter = new materialCustomAdapter(this, R.layout.item_mult, names);
+        etiqueta.add("Disponible");
+        etiqueta.add("Disponble");
+        etiqueta.add("Disponible");
+        etiqueta.add("No Disponible");
+
+        materialCustomAdapter materialCustomAdapter = new materialCustomAdapter(this, R.layout.item_mult, names, etiqueta);
         listViewMat.setAdapter(materialCustomAdapter);
 
         listViewMat.setClickable(true);

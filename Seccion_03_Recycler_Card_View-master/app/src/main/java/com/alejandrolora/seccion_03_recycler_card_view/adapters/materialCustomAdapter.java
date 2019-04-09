@@ -9,34 +9,50 @@ import android.widget.TextView;
 
 import com.alejandrolora.seccion_03_recycler_card_view.R;
 
+import java.util.ArrayList;
 import java.util.List;
-
+//Adapter solo con un texto
 public class materialCustomAdapter extends BaseAdapter {
 
     private Context mContext;
     private int layout;
-    private List<String> materialList;
+    private ArrayList<String> materialList;
+    private ArrayList<String> etiquetas;
 
 
-    public materialCustomAdapter(Context mContext, int layout, List<String> materialList) {
+
+    public materialCustomAdapter(Context mContext, int layout, ArrayList<String> materialList, ArrayList<String> etiquetas) {
         this.mContext = mContext;
         this.layout = layout;
         this.materialList = materialList;
+        this.etiquetas = etiquetas;
     }
 
     @Override
     public int getCount() {
         return this.materialList.size();
     }
+    public int getCount2() {
+        return this.etiquetas.size();
+    }
+
 
     @Override
     public Object getItem(int position) {
         return this.materialList.get(position);
     }
 
+    public Object getItem2(int position) {
+        return this.etiquetas.get(position);
+    }
+
     @Override
-    public long getItemId(int id) {
-        return id;
+    public long getItemId(int id2) {
+        return id2;
+    }
+
+    public long getItemId2(int id2) {
+        return id2;
     }
 
     @Override
@@ -48,8 +64,13 @@ public class materialCustomAdapter extends BaseAdapter {
 
         String currentName = materialList.get(position);
 
-        TextView textView = (TextView) v.findViewById(R.id.txtmultimetro);
-        textView.setText(currentName);
+        String currentEtiqueta = etiquetas.get(position);
+
+        TextView textView1 = v.findViewById(R.id.txtmultimetro);
+        textView1.setText(currentName);
+
+        TextView textView2 = v.findViewById(R.id.txtEtiqueta);
+        textView2.setText(currentEtiqueta);
 
         return v;
 

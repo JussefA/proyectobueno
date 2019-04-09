@@ -50,14 +50,21 @@ public class generadorSenales extends AppCompatActivity {
         });
 
         listViewMat = (ListView) findViewById(R.id.listGen);
-        final List<String> names = new ArrayList<String>();
+
+        final ArrayList<String> names = new ArrayList<String>();
+        final ArrayList<String> etiqueta = new ArrayList<String>();
 
         names.add("G1");
         names.add("G2");
         names.add("G3");
         names.add("G4");
 
-        materialCustomAdapter materialCustomAdapter = new materialCustomAdapter(this, R.layout.item_mult, names);
+        etiqueta.add("Disponible");
+        etiqueta.add("No disponble");
+        etiqueta.add("Disponible");
+        etiqueta.add("No Disponible");
+
+        materialCustomAdapter materialCustomAdapter = new materialCustomAdapter(this, R.layout.item_mult, names, etiqueta);
         listViewMat.setAdapter(materialCustomAdapter);
 
         listViewMat.setClickable(true);

@@ -53,14 +53,21 @@ public class multimetro extends AppCompatActivity {
 
 
         listViewMat = (ListView) findViewById(R.id.listMult);
-        final List<String> names = new ArrayList<String>();
+        final ArrayList<String> names = new ArrayList<String>();
+        final ArrayList<String> etiqueta = new ArrayList<String>();
+
 
         names.add("M1");
         names.add("M2");
         names.add("M3");
         names.add("M4");
 
-        materialCustomAdapter materialCustomAdapter = new materialCustomAdapter(this, R.layout.item_mult, names);
+        etiqueta.add("Disponible");
+        etiqueta.add("No disponble");
+        etiqueta.add("Disponible");
+        etiqueta.add("No Disponible");
+
+        materialCustomAdapter materialCustomAdapter = new materialCustomAdapter(this, R.layout.item_mult, names, etiqueta);
         listViewMat.setAdapter(materialCustomAdapter);
 
         listViewMat.setClickable(true);
