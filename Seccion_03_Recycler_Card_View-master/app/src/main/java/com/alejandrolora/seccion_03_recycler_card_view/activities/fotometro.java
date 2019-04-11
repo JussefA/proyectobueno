@@ -2,7 +2,10 @@ package com.alejandrolora.seccion_03_recycler_card_view.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -20,39 +23,21 @@ public class fotometro extends AppCompatActivity {
     ImageView perfil;
     Button material;
     String pedido;
-    static ArrayList  <String> pedidoFotometro = new ArrayList<String>();
+    static ArrayList  <String> pedidoFotometro = new ArrayList<>();
 
     private ListView listViewMat;
 
+    private BottomNavigationView mMainNav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fotometro);
 
-        material = findViewById(R.id.materialbtn);
 
-        material.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(fotometro.this,MainActivity.class);
-                startActivity(i);
-            }
-        });
-
-        perfil = findViewById(R.id.imgvw_perfil);
-        perfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(fotometro.this,estudiante.class);
-                startActivity(i);
-            }
-        });
-
-
-        listViewMat = (ListView) findViewById(R.id.listFotometro);
-        final ArrayList<String> names = new ArrayList<String>();
-        final ArrayList<String> etiqueta = new ArrayList<String>();
+        listViewMat =  findViewById(R.id.listFotometro);
+        final ArrayList<String> names = new ArrayList<>();
+        final ArrayList<String> etiqueta = new ArrayList<>();
 
 
         names.add("F1");
@@ -99,6 +84,38 @@ public class fotometro extends AppCompatActivity {
                         break;
                 }
 
+            }
+        });
+
+
+        mMainNav = findViewById(R.id.main_nav);
+
+        mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+
+                    case R.id.nav_material :
+                        mMainNav.setItemBackgroundResource(R.color.Morado);
+                        Intent a = new Intent(fotometro.this,MainActivity.class);
+                        startActivity(a);
+                        return true;
+
+                    case R.id.nav_pedido :
+                        mMainNav.setItemBackgroundResource(R.color.Azul);
+
+                        return true;
+
+                    case R.id.nav_persona:
+                        mMainNav.setItemBackgroundResource(R.color.AzulClaro);
+                        Intent i = new Intent(fotometro.this,estudiante.class);
+                        startActivity(i);
+                        return true;
+
+                    default :
+                        return false;
+
+                }
             }
         });
     }

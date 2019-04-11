@@ -9,9 +9,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activities.MainActivity">
-
-        </activity>
+        <activity android:name=".activities.MainActivity"/>
         <activity android:name=".activities.entrar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +26,7 @@
         <activity android:name=".activities.puntas" />
         <activity android:name=".activities.estudiante" />
         <activity android:name=".activities.pedido" />
+        <activity android:name=".activities.barra_menu_2"/>
     </application>
 
 </manifest>

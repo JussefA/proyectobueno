@@ -2,7 +2,10 @@ package com.alejandrolora.seccion_03_recycler_card_view.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
@@ -18,7 +21,10 @@ public class estudiante extends AppCompatActivity {
 
     Button material;
     private ListView listViewMat;
-    List<String> nombresPedido = new ArrayList<String>();
+    List<String> nombresPedido = new ArrayList<>();
+
+    private BottomNavigationView mMainNav;
+
 
     public pedido pedido = new pedido();
 
@@ -27,19 +33,38 @@ public class estudiante extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.estudiante);
 
-        material = findViewById(R.id.materialbtn);
 
-        material.setOnClickListener(new View.OnClickListener() {
+        listViewMat = findViewById(R.id.listPedidoFin);
+
+        mMainNav = findViewById(R.id.main_nav);
+
+        mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onClick(View v) {
-                Intent i = new Intent(estudiante.this,MainActivity.class);
-                startActivity(i);
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+
+                    case R.id.nav_material :
+                        mMainNav.setItemBackgroundResource(R.color.Morado);
+                        Intent a = new Intent(estudiante.this,MainActivity.class);
+                        startActivity(a);
+                        return true;
+
+                    case R.id.nav_pedido :
+                        mMainNav.setItemBackgroundResource(R.color.Azul);
+                        Intent i = new Intent(estudiante.this,pedido.class);
+                        startActivity(i);
+                        return true;
+
+                    case R.id.nav_persona:
+                        mMainNav.setItemBackgroundResource(R.color.AzulClaro);
+                        return true;
+
+                    default :
+                        return false;
+
+                }
             }
         });
-
-        listViewMat = (ListView) findViewById(R.id.listPedidoFin);
-
-
 
     }
 

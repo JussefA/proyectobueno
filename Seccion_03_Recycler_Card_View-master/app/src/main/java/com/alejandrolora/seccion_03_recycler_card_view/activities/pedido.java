@@ -2,7 +2,10 @@ package com.alejandrolora.seccion_03_recycler_card_view.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -19,8 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class pedido extends AppCompatActivity {
-    ImageView perfil;
-    Button material;
+
     Button fin;
     private ListView listViewMat;
     public multimetro multi = new multimetro();
@@ -30,35 +32,16 @@ public class pedido extends AppCompatActivity {
     public fuenteVoltaje fVolt = new fuenteVoltaje();
     public generadorSenales generador = new generadorSenales();
     public puntas puntas = new puntas();
-    public static ArrayList<String> pedidoTotal = new ArrayList<String>();
-    public static ArrayList<String> pedidoEstudiante = new ArrayList<String>();
+    public static ArrayList<String> pedidoTotal = new ArrayList<>();
+    public static ArrayList<String> pedidoEstudiante = new ArrayList<>();
 
-
+    private BottomNavigationView mMainNav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pedido);
 
-
-        material = findViewById(R.id.materialbtn);
-
-        material.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(pedido.this,MainActivity.class);
-                startActivity(i);
-            }
-        });
-
-        perfil = findViewById(R.id.imgvw_perfil);
-        perfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(pedido.this,estudiante.class);
-                startActivity(i);
-            }
-        });
 
         fin = findViewById(R.id.btnFinPedido);
 
@@ -75,7 +58,7 @@ public class pedido extends AppCompatActivity {
             }
         });
 
-        listViewMat = (ListView) findViewById(R.id.listPedido);
+        listViewMat =  findViewById(R.id.listPedido);
 
 
         pedidoTotal.clear();
@@ -92,6 +75,38 @@ public class pedido extends AppCompatActivity {
 
         pedidoAdapter pedidoAdapter = new pedidoAdapter(this,R.layout.item_pedido,pedidoTotal);
         listViewMat.setAdapter(pedidoAdapter);
+
+
+        mMainNav = findViewById(R.id.main_nav);
+
+        mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+
+                    case R.id.nav_material :
+                        mMainNav.setItemBackgroundResource(R.color.Morado);
+                        Intent a = new Intent(pedido.this,MainActivity.class);
+                        startActivity(a);
+                        return true;
+
+                    case R.id.nav_pedido :
+                        mMainNav.setItemBackgroundResource(R.color.Azul);
+
+                        return true;
+
+                    case R.id.nav_persona:
+                        mMainNav.setItemBackgroundResource(R.color.AzulClaro);
+                        Intent i = new Intent(pedido.this,estudiante.class);
+                        startActivity(i);
+                        return true;
+
+                    default :
+                        return false;
+
+                }
+            }
+        });
 
     }
 

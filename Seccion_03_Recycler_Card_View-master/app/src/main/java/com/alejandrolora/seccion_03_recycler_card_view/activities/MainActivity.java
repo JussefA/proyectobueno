@@ -2,6 +2,8 @@ package com.alejandrolora.seccion_03_recycler_card_view.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -21,8 +23,6 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView perfil;
-    Button verP;
 
     private List<Movie> movies;
 
@@ -33,33 +33,17 @@ public class MainActivity extends AppCompatActivity {
 
     private int counter = 0;
 
+    private BottomNavigationView mMainNav;
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        perfil = findViewById(R.id.imgvw_perfil);
-        perfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,estudiante.class);
-                startActivity(i);
-            }
-        });
-
-        verP =findViewById(R.id.btnVer);
-        verP.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,pedido.class);
-                startActivity(i);
-            }
-        });
-
-
 
         movies = this.getAllMovies();
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        mRecyclerView =  findViewById(R.id.recyclerView);
         mLayoutManager = new LinearLayoutManager(this);
 
         // 1 linea de dif. acabo de build y error en interfaz xk pojo. esto y luego xml con card, textview image
@@ -82,6 +66,42 @@ public class MainActivity extends AppCompatActivity {
         // Enlazamos el layout manager y adaptor directamente al recycler view
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
+
+
+        mMainNav = findViewById(R.id.main_nav);
+
+        mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+
+                    case R.id.nav_material :
+                        mMainNav.setItemBackgroundResource(R.color.Morado);
+
+                        return true;
+
+                    case R.id.nav_pedido :
+                        mMainNav.setItemBackgroundResource(R.color.Azul);
+                        Intent i = new Intent(MainActivity.this,pedido.class);
+                        startActivity(i);
+                        return true;
+
+                    case R.id.nav_persona:
+                        mMainNav.setItemBackgroundResource(R.color.AzulClaro);
+                        Intent a = new Intent(MainActivity.this,estudiante.class);
+                        startActivity(a);
+                        return true;
+
+                        default :
+                            return false;
+
+                }
+            }
+        });
+
+
+
+
     }
 
 

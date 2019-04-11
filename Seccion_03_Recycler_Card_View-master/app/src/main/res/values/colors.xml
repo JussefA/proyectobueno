@@ -8,5 +8,19 @@
     <color name="Negro">#000000</color>
     <color name="Blanco">#FFFFFF</color>
     <color name="Rosa">#E4027A</color>
+    <color name="Azul">#4B6192</color>
+    <color name="Verde3">#377249</color>
+    <color name="AzulClaro">#367D8A</color>
+    <color name="Morado">#594580</color>
+
+
+
+
+
+    <color name="Blanco2">#FFFFFF</color>
+    <color name="BlancoTransparente">#80FFFFFF</color>
+
+
 
 </resources>
+

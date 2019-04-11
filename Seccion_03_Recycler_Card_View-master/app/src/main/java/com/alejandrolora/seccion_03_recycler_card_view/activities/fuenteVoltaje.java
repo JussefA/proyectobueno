@@ -2,7 +2,10 @@ package com.alejandrolora.seccion_03_recycler_card_view.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -21,9 +24,11 @@ public class fuenteVoltaje extends AppCompatActivity {
     Button material;
     String pedido;
 
-    static ArrayList<String> pedidoFuenteVoltaje = new ArrayList<String>();
+    static ArrayList<String> pedidoFuenteVoltaje = new ArrayList<>();
 
     private ListView listViewMat;
+
+    private BottomNavigationView mMainNav;
 
 
     @Override
@@ -31,29 +36,11 @@ public class fuenteVoltaje extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fuente_voltaje);
 
-        material = findViewById(R.id.materialbtn);
 
-        material.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(fuenteVoltaje.this,MainActivity.class);
-                startActivity(i);
-            }
-        });
+        listViewMat =  findViewById(R.id.listFuenteVoltaje);
 
-        perfil = findViewById(R.id.imgvw_perfil);
-        perfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(fuenteVoltaje.this,estudiante.class);
-                startActivity(i);
-            }
-        });
-
-        listViewMat = (ListView) findViewById(R.id.listFuenteVoltaje);
-
-        final ArrayList<String> names = new ArrayList<String>();
-        final ArrayList<String> etiqueta = new ArrayList<String>();
+        final ArrayList<String> names = new ArrayList<>();
+        final ArrayList<String> etiqueta = new ArrayList<>();
 
         names.add("FV1");
         names.add("FV2");
@@ -98,6 +85,37 @@ public class fuenteVoltaje extends AppCompatActivity {
                         break;
                 }
 
+            }
+        });
+
+        mMainNav = findViewById(R.id.main_nav);
+
+        mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+
+                    case R.id.nav_material :
+                        mMainNav.setItemBackgroundResource(R.color.Morado);
+                        Intent a = new Intent(fuenteVoltaje.this,MainActivity.class);
+                        startActivity(a);
+                        return true;
+
+                    case R.id.nav_pedido :
+                        mMainNav.setItemBackgroundResource(R.color.Azul);
+
+                        return true;
+
+                    case R.id.nav_persona:
+                        mMainNav.setItemBackgroundResource(R.color.AzulClaro);
+                        Intent i = new Intent(fuenteVoltaje.this,estudiante.class);
+                        startActivity(i);
+                        return true;
+
+                    default :
+                        return false;
+
+                }
             }
         });
     }
